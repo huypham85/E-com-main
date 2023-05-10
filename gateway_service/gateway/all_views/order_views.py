@@ -34,7 +34,7 @@ def update_order(request):
             order_id = data.get('Order ID')
             status = data.get('Status')
 
-            requests.post('http://127.0.0.1:3000/orders/show_order/', json={
+            requests.post('http://127.0.0.1:3000/orders/update_order/', json={
                 "Order ID" : order_id,
                 'Status' : status
             }).json()
